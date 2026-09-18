@@ -4,22 +4,28 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>The Honourable | Blog</title>
-    <link rel="stylesheet" href="../Assets/CSS/styles.css">
+  <link rel="stylesheet" href="../Assets/CSS/1styles.css">
     </head>
     
       <!--Header Section-->
     <header>
      <!-- NAVIGATION -->
         <nav>
-             <li><a href ="../index.html">Home</a></li>
-            <li><a href="./about.html">About Us</a></li>
-            <li><a href="./product.html">Product</a></li>
-            <li><a href="./signup.html">sign up</a></li>
-            <li><a href="./contactus.html">Contact us</a></li>
-            <li><a href="./blog.html">Blog</a></li>
+            <a href="./index.html" class="logo">
+                <img src="../Assets/Images/HounarableFit_logo_1.png" alt="The Honourable Fit logo">
+                <span>The <em>Honourable</em></span>
+            </a>
+            <a href ="../index.html">Home</a> |
+            <a href="./about.html">About Us</a> |
+            <a href="./product.html">Product</a> |
+            <a href="./signup.html">Sign Up</a> |
+            <a href="./contactus.html">Contact us</a> |
+            
         </nav>
     </header>
     <header>
+         <div class="page-banner" style="background-image: url('../Assets/HounarableFit_background_5.png');">
+
         <h1>The Honourable</h1>
        
     </header>
@@ -37,7 +43,7 @@
         <section>
             <!--Article Section-->
             <h2>Featured Article</h2>
-            <article>
+            <article class="card">
                 <h3>5 Ways to Stay Consistent With Your Workouts</h3>
                 <p>
                     Staying consistent is one of the most important parts
@@ -52,6 +58,8 @@
         </section>
         <!-- LATEST ARTICLES -->
         <section>
+            <div class="grid grid-3">
+                <article class="card">
             <h2>Latest Articles</h2>
             <article>
                 <h3>Beginner's Guide to Strength Training</h3>
@@ -64,9 +72,9 @@
                     <strong>Category:</strong> Workouts
                 </p>
                 <a href="article1.html">Read More</a>
-            </article>
+            </article >
             <!-- ARTICLE2 -->
-            <article>
+            <article class="card">
                 <h3>Building Healthy Eating Habits</h3>
                 <p>
                     Learn practical ways to develop balanced eating habits
@@ -79,7 +87,7 @@
                 <a href="article2.html">Read More</a>
 
             </article>
-            <article>
+            <article class="card">
                 <h3>How to Stay Motivated at the Gym</h3>
                 <p>
                     Motivation can change from day to day. Discover ways to
@@ -92,7 +100,7 @@
                 <a href="article3.html">Read More</a>
 
             </article>
-            <article>
+            <article class="card">
                 <h3>Why Rest Days Matter</h3>
                 <p>
                     Recovery is an important part of a balanced fitness
@@ -104,7 +112,7 @@
                 </p>
                 <a href="article4.html">Read More</a>
             </article>
-            <article>
+            <article class="card">
                 <h3>Cardio vs Strength Training</h3>
                 <p>
                     Learn the differences between cardio and strength
@@ -116,7 +124,7 @@
                 </p>
                 <a href="article5.html">Read More</a>
             </article>
-            <article>
+            <article class="card">
                 <h3>The Importance of Setting Fitness Goals</h3>
                 <p>
                     Setting clear goals can help you stay focused,
@@ -127,6 +135,7 @@
                 </p>
                 <a href="article6.html">Read More</a>
             </article>
+        </div>
         </section>
         <!--NEWSLETTER-->
         <section>
@@ -163,7 +172,7 @@
             <li>Facebook</li>
         </ul>
     </p>
-    <p>&copy; 2026 The Honourable</p>
+    <p class="copyright">&copy; 2026 The Honourable</p>
 </footer>
     </main>
 </body>

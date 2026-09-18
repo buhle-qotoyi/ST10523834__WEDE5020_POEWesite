@@ -4,25 +4,32 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>The Honourable | Contact Us</title>
-    <link rel="stylesheet" href="../Assets/CSS/styles.css">
+    <link rel="stylesheet" href="../Assets/CSS/1styles.css">
 </head>
   <!--Header Section-->
     <header>
      <!-- NAVIGATION -->
         <nav>
-             <li><a href ="../index.html">Home</a></li>
-            <li><a href="./about.html">About Us</a></li>
-            <li><a href="./product.html">Product</a></li>
-            <li><a href="./signup.html">sign up</a></li>
-            <li><a href="./contactus.html">Contact us</a></li>
-            <li><a href="./blog.html">Blog</a></li>
+            <a href="./index.html" class="logo">
+                <img src="../Assets/Images/HounarableFit_logo_1.png" alt="The Honourable Fit logo">
+                <span>The <em>Honourable</em></span>
+            </a>
+             <a href ="../index.html">Home</a> |
+            <a href="./about.html">About Us</a> |
+            <a href="./product.html">Product</a> |
+            <a href="./signup.html">Sign Up</a> |
+            <a href="./enquiry.html">Enquiry</a> |
+            <a href="./blog.html">Blog</a> |
         </nav>
     </header>
 <body>
    <!--Main Section-->
     <main>
-        <section>
+       
+            <div class="page-banner" style="background-image: url('../Assets/Images/HounarableFit_background_3.png');"></div>
             <h1>Contact Us</h1>
+    </div>
+    <section>
             <p>
                 We make it easy to Find and communicate with our Gym
             </p></br>
@@ -63,16 +70,25 @@
             <h1>Enquiry Form </h1>
             <!--Create a form-->
             <form action="#" method=""POST">
+                 <div class="form-group">
+
             <label for="name" name="name">Your Name:</label><br/>
             <input type="text" id="name" placeholder="Tell us who you are" required><br/>
+            </div>
+             <div class="form-group">
+
             <label for="Email" name="email">Email Address:</label><br/>
             <input type="email" name="email" placeholder="Where we can reply to you" required><br/>
+            </div>
+             <div class="form-group">
             <label for="tel" name="tel">Your Phone Number:</label><br/>
            <input type="tel" id="tel" placeholder="Enter Your Phone number" required><br/>
+           </div>
+            <div class="form-group">
             <label for="message" name="message">Message:</label><br/>
             <textarea name="message" rows="10" cols="40" placeholder="Tell us about your goals and timeline." required> 
-            </textarea><br/>
-            <button type="submit">Send Message</button>
+            </textarea></div><br/>
+            <button  class="btn" type="submit">Send Message</button>
         </form>
         </section>
     </main>
@@ -99,6 +115,6 @@
             <li>Facebook</li>
         </ul>
     </p>
-    <p>&copy; 2026 The Honourable</p>
+    <p class="copyright">&copy; 2026 The Honourable</p>
 </footer>
 </html>

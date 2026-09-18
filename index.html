@@ -4,13 +4,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>The_Honourable | HOME</title>
-    <link rel="stylesheet" href="./Assets/CSS/styles.css">
+    <link rel="stylesheet" href="./Assets/CSS/1styles.css">
 </head>
 <body>
     <!--Header Section-->
     <header>
      <!-- NAVIGATION -->
         <nav>
+              <a href="./index.html" class="logo">
+                <img src="./Assets/Images/HounarableFit_logo_1.png" alt="The Honourable Fit logo">
+                <span>The <em>Honourable</em></span>
+            </a>
             <a href="./index.html">Home</a> |
             <a href="./Pages/about.html">About</a> |
             <a href="./Pages/product.html">Products</a> |
@@ -22,6 +26,9 @@
     </header>
     <!--Main section-->
     <main>
+          <section class="hero hero-photo" style="background-image: url('./Assets/Images/HounarableFit_background_2.png');">
+            <div class="hero-content">
+
         <header>      
     <!--Headings-->
     <strong><h1>The Honourable</h1></strong>
@@ -29,6 +36,7 @@
     <strong> <p style="text-align: center;" style="font-size: x-large;">
     Train Honourably. &nbsp;&nbsp;&nbsp;   With Grit. &nbsp;&nbsp;&nbsp;  Passion. &nbsp;&nbsp;&nbsp;   And Guts
     </p></strong>
+</div>
     <br>
     <section>
         <!--Main Paragraph-->
@@ -46,7 +54,7 @@ Welcome to HounarableFit, where sweat, grit, and discipline are welcomed with op
        <section>
 <p><strong>Come Test yourself!</strong></p>
 <!--Link to sign up page-->
-<p>Join us: <button><a href="./Pages/signup.html">Sign Up</a></button>
+<p>Join us: <button class="btn"><a href="./Pages/signup.html">Sign Up</a></button>
  </p>
 </main>
 </section>
@@ -54,13 +62,24 @@ Welcome to HounarableFit, where sweat, grit, and discipline are welcomed with op
 <section>
     <!--Why The Honorouble?-->
     <h2><strong>Why the Honorouble?</strong></h2>
+     <div class="grid grid-3">
+                <div class="card">
+
     <p>
         <h3><strong>Quality equipment</strong></h3>
         We have modern training equipment for strength and cardio.
+    </div>
+    <div class="card">
+
         <h3><strong>Support</strong></h3>
         We offer a gym Community and personal trainers that help support and help you improve.
+         </div>
+                <div class="card">
         <h3><strong>Options</strong></h3>
         We have flexible membership and Services plans for all your different needs.
+         </div>
+            </div>
+
     </p>
     <br>
 </section>
@@ -77,39 +96,49 @@ Welcome to HounarableFit, where sweat, grit, and discipline are welcomed with op
         <h4>Cardio Training</h4>
         Build your endurance with us and get your sweat on.
     </p>
+    
     <p>
-<button><a href="./Pages/services.html">View All Services</a></button>
+<button class="btn"><a href="./Pages/services.html">View All Services</a></button>
     </p>
     <br>
     <section>
 <!--get to know-->
 <strong><h2>Learn about us</h2></strong>
-<button><a href="./Pages/about.html">About Us</a></button> </p>
+<button class="btn"><a href="./Pages/about.html">About Us</a></button> </p>
 </section>
  <br>
     <section>
         <!--A preview of our products-->
         <h2><strong>Find your Fit</strong></h2>
+         <div class="grid grid-3">
+                <div class="card">
+
         <p>
             <h3>Personal Training Package</h3>
             <ul>
                 <li>One on one Training</li>
                 <li>Workout Guidance</li>
                 <li>Personal fitness Goals</li>
-            
+             </div>
+                <div class="card">
+
             </ul>
             <h3>Fitness programme</h3>
             <ul>
                 <li>Workout plan</li>
                 <li>Progress Tracking</li>
                 <li>Weekly goals</li>
+                  </div>
+                <div class="card">
+
             </ul>
             <h3>Honourable Clothing</h3>
             <ul>
                 <li>Honourable branded Shirt</li>
             </ul>
-            <button><a href="./Pages/product.html">View more</a></button>
-
+            </div>
+           
+ <p style="text-align: left; margin-top: 2rem;"><button class="btn"><a href="./Pages/product.html">View more</a></button></p>
         </p>
     </section>
     <br>
@@ -124,7 +153,7 @@ Welcome to HounarableFit, where sweat, grit, and discipline are welcomed with op
     <li>Community</li>
     <li>Gym plan</li>
     </ul>
-    <button><a href="./Pages/blog.html">Blog</a></button>
+    <button class="btn"><a href="./Pages/blog.html">Blog</a></button>
    </p>
 </section>
 <br>
@@ -135,7 +164,7 @@ Welcome to HounarableFit, where sweat, grit, and discipline are welcomed with op
             Join the Honorouble community and take the first step to your goals.
             
         </p>
-        <button><a href="./Pages/signup.html">[JOIN NOW]</a></button>
+        <button class="btn"><a href="./Pages/signup.html">JOIN NOW</a></button>
     </section>
     <br>   
 </body>
@@ -162,6 +191,6 @@ Welcome to HounarableFit, where sweat, grit, and discipline are welcomed with op
             <li>Facebook</li>
         </ul>
     </p>
-    <p>&copy; 2026 The Honourable</p>
+    <p class="copyright">&copy; 2026 The Honourable</p>
 </footer>
 </html>

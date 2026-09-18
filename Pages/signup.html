@@ -4,25 +4,32 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>The Honourable | Sign Up</title>
-    <link rel="stylesheet" href="../Assets/CSS/styles.css">
+    <link rel="stylesheet" href="../Assets/CSS/1styles.css">
 </head>
 <body>
       <!--Header Section-->
     <header>
      <!-- NAVIGATION -->
         <nav>
+            <a href="./index.html" class="logo">
+                <img src="../Assets/Images/HounarableFit_logo_1.png" alt="The Honourable Fit logo">
+                <span>The <em>Honourable</em></span>
+            </a>
             <a href="../index.html">Home</a> |
             <a href="./about.html">About</a> |
             <a href="./product.html">Products</a> |
             <a href="./blog.html">Blog</a> |
             <a href="./enquiry.html">Enquiry</a> |
             <a href="./contactus.html">Contact Us</a> |
-            <a href="./signup.html">Sign Up</a>
+            
         </nav>
     </header>
+    <div class="page-banner" style="background-image: url('../Assets/Images/HounarableFit_background_3.png');">
+
     <section>
         <!--My introduction-->
         <h1>Join The Honourable Today!</h1>
+        </div>
         <p>
             Take the first step towards becoming stronger, healthier and more confident. Create your Honourable account and start your fitness journey today.
         </p>
@@ -30,31 +37,47 @@
     <section>
         <!--Sign up form-->
             <form action="#" method=""POST">
+                <div class="form-group">
             <label for="name" name="name">Your First Name:</label><br/>
             <input type="text" id="name" placeholder="" required><br/>
+            </div>
+            <div class="form-group">
             <label for="name" name="name">Your Last Name:</label><br/>
             <input type="text" id="name" placeholder="" required><br/>
+            </div>
+            <div class="form-group">
             <label for="Email" name="email">Email Address:</label><br/>
             <input type="email" name="email" placeholder="" required><br/>
+            </div>
+            <div class="form-group">
             <label for="tel" name="tel">Your Phone Number:</label><br/>
            <input type="tel" id="tel" placeholder="" required><br/>
+           </div>
+           <div class="form-group">
            <label for="Date of birth" name="Date of birth">Your Date of Birth:</label><br/>
            <input type="date" id="Date of Birth" required><br/>
+           </div>
+           <div class="form-group">
            <label for="Password" name="Password">Enter a Password:</label><br/>
            <input type="password" id="Password" required><br/>
+           </div>
+           <div class="form-group">
              <label for="Password" name="Password">Confirm Password:</label><br/>
            <input type="password" id="Password" required><br/>
+           </div>
 
-           
+           <div class="form-group">
             <label for="memb_type" name="memb_type">Membership Type:</label><br/>
             <select id="memb_type" name="memb_type" required>
                 <option value="">--Select--</option>
                 <option value="">Basic</option>
                 <option value="">premium</option>
                 <option value="">student</option>
-            </select><br/>
+            </select></div><br/>
+            <div class="form-group">
             <input type="checkbox" id="agree"> <label for="agree">I agree</label><br/>
-            <button type="submit">Create Account</button>
+            </div>
+            <button class="btn" type="submit">Create Account</button>
         </form>
     </section>
     
@@ -80,6 +103,6 @@
             <li>Facebook</li>
         </ul>
     </p>
-    <p>&copy; 2026 The Honourable</p>
+    <p class="copyright">&copy; 2026 The Honourable</p>
 </footer>
 </html>
