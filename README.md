@@ -21,6 +21,9 @@ Features:•	Homepage
 **Colours** (defined once in `:root` at the top of `styles.css`)
 **Fonts:** Poppins (headings) and Montserrat (body), loaded from Google Fonts, with Arial as the fallback.
 **Responsive breakpoints:** 900px (tablet), 600px (mobile), 400px (small phones).
+**Test and Iterate**
+## Phone
+![Phone image](Assets/Images/Phone.png)
 
 ## References
 Virgin Active South Africa. (2026). Virgin Active South Africa: Gyms near me. Available at: https://www.virginactive.co.za (Accessed: 5 August 2026)
