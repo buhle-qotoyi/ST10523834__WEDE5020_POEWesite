@@ -24,6 +24,10 @@ Features:•	Homepage
 **Test and Iterate**
 ## Phone
 ![Phone image](Assets/Images/Phone.png)
+## Tablet
+![Tablet image](Assets/Images/Table.png)
+## Laptop
+![Laptop image](Assets/Images/Laptop.png)
 
 ## References
 Virgin Active South Africa. (2026). Virgin Active South Africa: Gyms near me. Available at: https://www.virginactive.co.za (Accessed: 5 August 2026)
