@@ -1,16 +1,5 @@
 /* 
-   The Honourable – Part 3 JavaScript
-
-   Sections
-   1. Helpers
-   2. Opening hours + "open now" status      (contactus.html, enquiry reply)
-   3. Scroll-reveal animation                (all pages)
-   4. Accordion                              (enquiry.html FAQ)
-   5. Gallery lightbox                       (about.html)
-   6. Interactive map (Leaflet)              (contactus.html)
-   7. Blog search / filter / sort            (blog.html)
-   8. Form validation + submission           (enquiry, contactus, signup, blog)
-   Every feature only runs if its elements exist on the current page.
+   The Honourable – JavaScript
     */
 (function () {
     'use strict';
