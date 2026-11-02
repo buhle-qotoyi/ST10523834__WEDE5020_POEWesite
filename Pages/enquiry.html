@@ -4,109 +4,152 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>The Honourable | Enquire</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&family=Poppins:wght@600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../Assets/CSS/1styles.css">
 </head>
-  <!--Header Section-->
+<body>
+    <!-- Header and navigation -->
     <header>
-     <!-- NAVIGATION -->
         <nav>
             <a href="../index.html" class="logo">
                 <img src="../Assets/Images/HounarableFit_logo_1.png" alt="The Honourable Fit logo">
                 <span>The <em>Honourable</em></span>
             </a>
-            <a href="../index.html">Home</a> |
-            <a href="./about.html">About</a> |
-            <a href="./product.html">Products</a> |
-            <a href="./blog.html">Blog</a> |
-            <a href="./contactus.html">Contact Us</a> |
-            <a href="./signup.html">Sign Up</a>
-             <script src="../Assets/JS/main.js" defer></script>
+            <ul>
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="./about.html">About</a></li>
+                <li><a href="./product.html">Products</a></li>
+                <li><a href="./blog.html">Blog</a></li>
+                <li><a href="./enquiry.html" class="active" aria-current="page">Enquiry</a></li>
+                <li><a href="./contactus.html">Contact Us</a></li>
+                <li><a href="./signup.html">Sign Up</a></li>
+            </ul>
         </nav>
     </header>
-<body>
-  <div class="page-banner" style="background-image: url('../Assets/Images/HounarableFit_background_3.png');">
 
-    
-        <!--Information-->
-        <h1>Have a Question? Notify Us</h1>
-    </div>
-    <section></section>
-        <p>
-            Have questions about our memberships, facilities, classes or personal training? 
-            Send us an enquiry and our team will get back to you.
-        </p>
-    </section>
-    <br>
-    <section>
-        <!--Form fields-->
-        <form action="#" method=""POST">
-            <div class="form-group">
-            <label for="name" name="name">Your Name:</label><br/>
-            <input type="text" id="name" placeholder="Tell us who you are" required><br/>
+        <div class="page-banner" style="background-image: url('../Assets/Images/HounarableFit_background_3.png');">
+            <h1>Have a Question? Notify Us</h1>
+        </div>
+    <main>
+        <section>
+            <div class="container">
+                <p>
+                    Have questions about our memberships, facilities, classes or personal training?
+                    Send us an enquiry and our team will get back to you.
+                </p>
+                <p id="open-status" class="open-status" role="status"></p>
             </div>
-            <div class="form-group">
-            <label for="Email" name="email">Email Address:</label><br/>
-            <input type="email" name="email" placeholder="Where we can reply to you" required><br/>
+        </section>
+
+        <section>
+            <div class="container">
+                <form action="#" method="post" data-validate="enquiry" data-endpoint="">
+                    <div class="form-group">
+                        <label for="name">Your Name:</label>
+                        <input type="text" id="name" name="name" placeholder="Tell us who you are" autocomplete="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email Address:</label>
+                        <input type="email" id="email" name="email" placeholder="Where we can reply to you" autocomplete="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="tel">Your Phone Number:</label>
+                        <input type="tel" id="tel" name="tel" placeholder="e.g. 076 029 5178" autocomplete="tel" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="topic">Enquiry Type:</label>
+                        <select id="topic" name="topic" required>
+                            <option value="">--Select--</option>
+                            <option value="membership">Membership</option>
+                            <option value="personal-training">Personal Training</option>
+                            <option value="classes">Fitness Classes</option>
+                            <option value="products">Products</option>
+                            <option value="facilities">Facilities</option>
+                            <option value="other">Other</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="visitDate">Preferred visit date (optional):</label>
+                        <input type="date" id="visitDate" name="visitDate">
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message:</label>
+                        <textarea id="message" name="message" rows="8" maxlength="500" placeholder="Request about any specific offering and opportunity." required></textarea>
+                    </div>
+                    <button class="btn" type="submit">Submit</button>
+                </form>
             </div>
-            <div class="form-group">
-            <label for="tel" name="tel">Your Phone Number:</label><br/>
-           <input type="tel" id="tel" placeholder="Enter Your Phone number" required><br/>
-           </div>
-           <div class="form-group">
-            <label for="Enquiry" name="Enquiry">Enquiry Type:</label><br/>
-            <select id="proj_type" name="proj_type" required>
-                <option value="">--Select--</option>
-                <option value="">Membership</option>
-                <option value="">Personal Training</option>
-                <option value="">Fitness Classes</option>
-                <option value="">Products</option>
-                <option value="">Facilities</option>
-                <option value="">Other</option>
-                </select>
+        </section>
+
+        <section>
+            <div class="container">
+                <h2>Frequently Asked Questions</h2>
+                <div class="accordion">
+                    <h3>
+                        <button class="accordion-trigger" type="button" id="faq-trigger-1" aria-expanded="false" aria-controls="faq-panel-1">What are your opening and closing hours?</button>
+                    </h3>
+                    <div class="accordion-panel" id="faq-panel-1" role="region" aria-labelledby="faq-trigger-1">
+                        <p>We are open Monday to Friday 05:00&ndash;21:00, Saturday 06:00&ndash;19:00 and Sunday 07:00&ndash;15:00.</p>
+                    </div>
+                    <h3>
+                        <button class="accordion-trigger" type="button" id="faq-trigger-2" aria-expanded="false" aria-controls="faq-panel-2">Do you offer student membership?</button>
+                    </h3>
+                    <div class="accordion-panel" id="faq-panel-2" role="region" aria-labelledby="faq-trigger-2">
+                        <p>Yes, student membership is available when you sign up. Send us an enquiry and we will reply with the price.</p>
+                    </div>
+                    <h3>
+                        <button class="accordion-trigger" type="button" id="faq-trigger-3" aria-expanded="false" aria-controls="faq-panel-3">Do I need experience to join?</button>
+                    </h3>
+                    <div class="accordion-panel" id="faq-panel-3" role="region" aria-labelledby="faq-trigger-3">
+                        <p>No. Whether you are taking your first steps into fitness or pushing towards your next goal, you are welcome. Personal training is available if you want one-on-one guidance.</p>
+                    </div>
+                    <h3>
+                        <button class="accordion-trigger" type="button" id="faq-trigger-4" aria-expanded="false" aria-controls="faq-panel-4">Can I visit before becoming a member?</button>
+                    </h3>
+                    <div class="accordion-panel" id="faq-panel-4" role="region" aria-labelledby="faq-trigger-4">
+                        <p>Yes. Pick a preferred visit date in the form above and we will confirm by email.</p>
+                    </div>
                 </div>
-                <div class="form-group">
-            <input type="number" name="budget" min="0" max="10" placeholder="Enter your phone number" required><br/>
-            <label for="message" name="message">Message:</label><br/>
-            <textarea name="message" rows="10" cols="40" placeholder="Request about any specific offering and opportunity." required> 
-            </textarea></div><br/>
-             <button class="btn" type="submit">Submit</button>
-        </form>
-    </section>
-    <section>
-        <!--Frequently asked Questions-->
-        <h2>Frequently Asked Questions:</h2>
-        <p>
-            <ul>
-                <li>What are your opening and closing hours</li>
-                <li>Do you offer student membership</li>
-                <li>Do i need experince to join</li>
-                <li>Can i Visit before becoming a member</li>
-            </ul>
-        </p>
-    </section>
-    
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div>
+                    <h3>The Honourable</h3>
+                    <p>Train Honourably. With Grit. Passion. And Guts.</p>
+                </div>
+                <div>
+                    <h3>Pages</h3>
+                    <ul>
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="./about.html">About</a></li>
+                    <li><a href="./product.html">Products</a></li>
+                    <li><a href="./blog.html">Blog</a></li>
+                    <li><a href="./enquiry.html">Enquiry</a></li>
+                    <li><a href="./contactus.html">Contact Us</a></li>
+                    <li><a href="./signup.html">Sign Up</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3>Social Media</h3>
+                    <ul>
+                        <li>Instagram</li>
+                        <li>Twitter</li>
+                        <li>TikTok</li>
+                        <li>Facebook</li>
+                    </ul>
+                </div>
+            </div>
+            <p class="copyright">&copy; 2026 The Honourable</p>
+        </div>
+    </footer>
+
+    <script src="../Assets/JS/main.js" defer></script>
 </body>
-<br><hr>
-<footer>
-    <!--The footer, Contains all my links-->
-    <strong>The Honourable</strong>
-    <p>
-        <ul>
-              <li><a href ="../index.html">Home</a></li>
-            <li><a href="./about.html">About Us</a></li>
-            <li><a href="./product.html">Product</a></li>
-            <li><a href="./signup.html">sign up</a></li>
-            <li><a href="./contactus.html">Contact us</a></li>
-            <li><a href="./blog.html">Blog</a></li>
-        </ul>
-        <strong>Social Media</strong>
-        <ul>
-            <li>Instagram</li>
-            <li>Twitter</li>
-            <li>TikTok</li>
-            <li>Facebook</li>
-        </ul>
-    </p>
-    <p class="copyright">&copy; 2026 The Honourable</p>
-</footer>
 </html>
