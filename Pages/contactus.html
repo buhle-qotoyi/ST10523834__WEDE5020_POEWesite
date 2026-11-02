@@ -4,120 +4,140 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>The Honourable | Contact Us</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&family=Poppins:wght@600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../Assets/CSS/1styles.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" crossorigin="">
 </head>
-  <!--Header Section-->
+<body>
+    <!-- Header and navigation -->
     <header>
-     <!-- NAVIGATION -->
         <nav>
             <a href="../index.html" class="logo">
                 <img src="../Assets/Images/HounarableFit_logo_1.png" alt="The Honourable Fit logo">
                 <span>The <em>Honourable</em></span>
             </a>
-             <a href ="../index.html">Home</a> |
-            <a href="./about.html">About Us</a> |
-            <a href="./product.html">Product</a> |
-            <a href="./signup.html">Sign Up</a> |
-            <a href="./enquiry.html">Enquiry</a> |
-            <a href="./blog.html">Blog</a> |
-            <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" crossorigin="">
-    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" crossorigin="" defer></script>
-             <script src="../Assets/JS/main.js" defer></script>
+            <ul>
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="./about.html">About</a></li>
+                <li><a href="./product.html">Products</a></li>
+                <li><a href="./blog.html">Blog</a></li>
+                <li><a href="./enquiry.html">Enquiry</a></li>
+                <li><a href="./contactus.html" class="active" aria-current="page">Contact Us</a></li>
+                <li><a href="./signup.html">Sign Up</a></li>
+            </ul>
         </nav>
     </header>
-<body>
-   <!--Main Section-->
-    <main>
-       
-            <div class="page-banner" style="background-image: url('../Assets/Images/HounarableFit_background_3.png');"></div>
+
+        <div class="page-banner" style="background-image: url('../Assets/Images/HounarableFit_background_3.png');">
             <h1>Contact Us</h1>
-    </div>
-    <section>
-            <p>
-                We make it easy to Find and communicate with our Gym
-            </p></br>
-        </section>
-        <!--Contact Details-->
+        </div>
+    <main>
         <section>
-            <h1>Get in touch with The Honourable</h1>
-            <ul>
-                <li >Email: TheHonourable@gmail.com</li>
-                <li>Phone: (076)-029-5178</li>
-                <li>Hours: Monday to Friday, 9:00 AM – 5:00 PM EST</li>
-            </ul>
-            </br>
+            <div class="container">
+                <p>We make it easy to Find and communicate with our Gym</p>
+            </div>
         </section>
-        <!--Location Details-->
-        <section>
-            <h1>Our Office</h1>
-            <ul>
-                <li >Address: Mercantile Bank Plaza, Ring Rd, Greenacres, Gqeberha, 6001</li>
-                <li>Map: View on Google Maps</li>
-            </ul>
-            <!--Google map-->
-            <iframe style=" display: block; margin: 0 auto;" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6619.22158790062!2d25.57487227462206!3d-33.95113717319529!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1e7ad32acf52d90f%3A0xf97a6f5c47bc1138!2sRosebank%20College%20Nelson%20Mandela%20Bay!5e0!3m2!1sen!2sza!4v1786087702173!5m2!1sen!2sza"  width="600" height="450"  style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin">
 
-            </iframe>
-            </br>
-            <!--Opening hours details-->
-            <h1>Our opening hours</h1>
-            <p>
-                <ul>
-                    <li>Monday-Friday: 05:00-21:00</li>
-                    <li>Saturday: 06:00-19:00</li>
-                    <li>Sunday: 07:00-15:00</li>
+        <section>
+            <div class="container">
+                <h2>Get in touch with The Honourable</h2>
+                <ul class="plain-list">
+                    <li>Email: TheHonourable@gmail.com</li>
+                    <li>Phone: (076)-029-5178</li>
                 </ul>
-            </p>
+                <p id="open-status" class="open-status" role="status"></p>
+            </div>
         </section>
+
         <section>
-            <h1>Enquiry Form </h1>
-            <!--Create a form-->
-            <form action="#" method=""POST">
-                 <div class="form-group">
+            <div class="container">
+                <h2>Our Office</h2>
+                <p>Address: Mercantile Bank Plaza, Ring Rd, Greenacres, Gqeberha, 6001</p>
+                <div id="map" role="region" aria-label="Map showing The Honourable gym"></div>
+                <noscript><p><a href="https://www.google.com/maps/search/?api=1&amp;query=-33.95114,25.57487">View our location on Google Maps</a></p></noscript>
 
-            <label for="name" name="name">Your Name:</label><br/>
-            <input type="text" id="name" placeholder="Tell us who you are" required><br/>
+                <h2 class="spaced">Our opening hours</h2>
+                <ul id="opening-hours" class="hours-list">
+                    <li data-days="1,2,3,4,5"><span>Monday&ndash;Friday</span> <span>05:00&ndash;21:00</span></li>
+                    <li data-days="6"><span>Saturday</span> <span>06:00&ndash;19:00</span></li>
+                    <li data-days="0"><span>Sunday</span> <span>07:00&ndash;15:00</span></li>
+                </ul>
             </div>
-             <div class="form-group">
+        </section>
 
-            <label for="Email" name="email">Email Address:</label><br/>
-            <input type="email" name="email" placeholder="Where we can reply to you" required><br/>
+        <section>
+            <div class="container">
+                <h2>Enquiry Form</h2>
+                <form action="mailto:TheHonourable@gmail.com" method="post" enctype="text/plain" data-validate="contact">
+                    <div class="form-group">
+                        <label for="name">Your Name:</label>
+                        <input type="text" id="name" name="name" placeholder="Tell us who you are" autocomplete="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email Address:</label>
+                        <input type="email" id="email" name="email" placeholder="Where we can reply to you" autocomplete="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="tel">Your Phone Number:</label>
+                        <input type="tel" id="tel" name="tel" placeholder="e.g. 076 029 5178" autocomplete="tel" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="messageType">Message type:</label>
+                        <select id="messageType" name="messageType" required>
+                            <option value="">--Select--</option>
+                            <option value="general">General question</option>
+                            <option value="membership">Membership</option>
+                            <option value="feedback">Feedback</option>
+                            <option value="other">Other</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message:</label>
+                        <textarea id="message" name="message" rows="8" maxlength="500" placeholder="Tell us about your goals and timeline." required></textarea>
+                    </div>
+                    <button class="btn" type="submit">Send Message</button>
+                </form>
             </div>
-             <div class="form-group">
-            <label for="tel" name="tel">Your Phone Number:</label><br/>
-           <input type="tel" id="tel" placeholder="Enter Your Phone number" required><br/>
-           </div>
-            <div class="form-group">
-            <label for="message" name="message">Message:</label><br/>
-            <textarea name="message" rows="10" cols="40" placeholder="Tell us about your goals and timeline." required> 
-            </textarea></div><br/>
-            <button  class="btn" type="submit">Send Message</button>
-        </form>
         </section>
     </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div>
+                    <h3>The Honourable</h3>
+                    <p>Train Honourably. With Grit. Passion. And Guts.</p>
+                </div>
+                <div>
+                    <h3>Pages</h3>
+                    <ul>
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="./about.html">About</a></li>
+                    <li><a href="./product.html">Products</a></li>
+                    <li><a href="./blog.html">Blog</a></li>
+                    <li><a href="./enquiry.html">Enquiry</a></li>
+                    <li><a href="./contactus.html">Contact Us</a></li>
+                    <li><a href="./signup.html">Sign Up</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3>Social Media</h3>
+                    <ul>
+                        <li>Instagram</li>
+                        <li>Twitter</li>
+                        <li>TikTok</li>
+                        <li>Facebook</li>
+                    </ul>
+                </div>
+            </div>
+            <p class="copyright">&copy; 2026 The Honourable</p>
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" crossorigin="" defer></script>
+    <script src="../Assets/JS/main.js" defer></script>
 </body>
-<br><hr>
-<footer>
-    <!--The footer, Contains all my links-->
-    <strong>The Honourable</strong>
-    <p>
-        <ul>
-            <li><a href ="./index.html">Home</a></li>
-            <li><a href="./Pages/about.html">About Us</a></li>
-        
-            <li><a href="./Pages/product.html">Product</a></li>
-            <li><a href="./Pages/signup.html">sign up</a></li>
-            <li><a href="./Pages/contactus.html">Contact us</a></li>
-            <li><a href="./Pages/blog.html">Blog</a></li>
-        </ul>
-        <strong>Social Media</strong>
-        <ul>
-            <li>Instagram</li>
-            <li>Twitter</li>
-            <li>TikTok</li>
-            <li>Facebook</li>
-        </ul>
-    </p>
-    <p class="copyright">&copy; 2026 The Honourable</p>
-</footer>
 </html>
