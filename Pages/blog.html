@@ -4,176 +4,155 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>The Honourable | Blog</title>
-  <link rel="stylesheet" href="../Assets/CSS/1styles.css">
-    </head>
-    
-      <!--Header Section-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&family=Poppins:wght@600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../Assets/CSS/1styles.css">
+</head>
+<body>
+    <!-- Header and navigation -->
     <header>
-     <!-- NAVIGATION -->
         <nav>
             <a href="../index.html" class="logo">
                 <img src="../Assets/Images/HounarableFit_logo_1.png" alt="The Honourable Fit logo">
                 <span>The <em>Honourable</em></span>
             </a>
-            <a href ="../index.html">Home</a> |
-            <a href="./about.html">About Us</a> |
-            <a href="./product.html">Product</a> |
-            <a href="./signup.html">Sign Up</a> |
-            <a href="./contactus.html">Contact us</a> |
-            <script src="../Assets/JS/main.js" defer></script>
+            <ul>
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="./about.html">About</a></li>
+                <li><a href="./product.html">Products</a></li>
+                <li><a href="./blog.html" class="active" aria-current="page">Blog</a></li>
+                <li><a href="./enquiry.html">Enquiry</a></li>
+                <li><a href="./contactus.html">Contact Us</a></li>
+                <li><a href="./signup.html">Sign Up</a></li>
+            </ul>
         </nav>
     </header>
-    <header>
-         <div class="page-banner" style="background-image: url('../Assets/HounarableFit_background_5.png');">
 
-        <h1>The Honourable</h1>
-       
-    </header>
-   
+        <div class="page-banner" style="background-image: url('../Assets/Images/HounarableFit_background_3.png');">
+            <h1>The Honourable</h1>
+        </div>
     <main>
-        <!-- BLOG INTRODUCTION -->
         <section>
-            <h2>The Honourable Blog</h2>
-            <p>
-                Welcome to The Honourable Blog. Discover fitness tips,
-                workout advice, healthy lifestyle ideas and motivation to
-                help you stay consistent on your fitness journey.
-            </p>
+            <div class="container">
+                <h2>The Honourable Blog</h2>
+                <p>
+                    Welcome to The Honourable Blog. Discover fitness tips,
+                    workout advice, healthy lifestyle ideas and motivation to
+                    help you stay consistent on your fitness journey.
+                </p>
+            </div>
         </section>
+
         <section>
-            <!--Article Section-->
-            <h2>Featured Article</h2>
+            <div class="container">
+                <h2>Featured Article</h2>
+                <article class="card">
+                    <h3>5 Ways to Stay Consistent With Your Workouts</h3>
+                    <p>
+                        Staying consistent is one of the most important parts
+                        of achieving your fitness goals. Learn simple ways to
+                        create a workout routine that you can maintain.
+                    </p>
+                    <p><strong>Category:</strong> Motivation</p>
+                    <a href="article1.html">Read More</a>
+                </article>
+            </div>
+        </section>
+
+        <!-- LATEST ARTICLES: main.js adds the search, category filter and sort controls here -->
+        <section id="latest-articles" class="container">
+            <h2>Latest Articles</h2>
             <article class="card">
-                <h3>5 Ways to Stay Consistent With Your Workouts</h3>
-                <p>
-                    Staying consistent is one of the most important parts
-                    of achieving your fitness goals. Learn simple ways to
-                    create a workout routine that you can maintain.
-                </p>
-                <p>
-                    <strong>Category:</strong> Motivation
-                </p>
+                <h3>Beginner's Guide to Strength Training</h3>
+                <p>New to the gym? Learn the basics of strength training and how beginners can start building a safe and effective workout routine.</p>
+                <p><strong>Category:</strong> Workouts</p>
                 <a href="article1.html">Read More</a>
             </article>
-        </section>
-        <!-- LATEST ARTICLES -->
-        <section>
-            <div class="grid grid-3">
-                <article class="card">
-            <h2>Latest Articles</h2>
-            <article>
-                <h3>Beginner's Guide to Strength Training</h3>
-                <p>
-                    New to the gym? Learn the basics of strength training
-                    and how beginners can start building a safe and effective
-                    workout routine.
-                </p>
-                <p>
-                    <strong>Category:</strong> Workouts
-                </p>
-                <a href="article1.html">Read More</a>
-            </article >
-            <!-- ARTICLE2 -->
             <article class="card">
                 <h3>Building Healthy Eating Habits</h3>
-                <p>
-                    Learn practical ways to develop balanced eating habits
-                    that support an active and healthy lifestyle.
-                </p>
-                <p>
-                    <strong>Category:</strong> Nutrition
-                </p>
-
+                <p>Learn practical ways to develop balanced eating habits that support an active and healthy lifestyle.</p>
+                <p><strong>Category:</strong> Nutrition</p>
                 <a href="article2.html">Read More</a>
-
             </article>
             <article class="card">
                 <h3>How to Stay Motivated at the Gym</h3>
-                <p>
-                    Motivation can change from day to day. Discover ways to
-                    develop good habits that help you stay focused on your
-                    fitness goals.
-                </p>
-                <p>
-                    <strong>Category:</strong> Motivation
-                </p>
+                <p>Motivation can change from day to day. Discover ways to develop good habits that help you stay focused on your fitness goals.</p>
+                <p><strong>Category:</strong> Motivation</p>
                 <a href="article3.html">Read More</a>
-
             </article>
             <article class="card">
                 <h3>Why Rest Days Matter</h3>
-                <p>
-                    Recovery is an important part of a balanced fitness
-                    routine. Learn why giving your body time to recover
-                    is important.
-                </p>
-                <p>
-                    <strong>Category:</strong> Recovery
-                </p>
+                <p>Recovery is an important part of a balanced fitness routine. Learn why giving your body time to recover is important.</p>
+                <p><strong>Category:</strong> Recovery</p>
                 <a href="article4.html">Read More</a>
             </article>
             <article class="card">
                 <h3>Cardio vs Strength Training</h3>
-                <p>
-                    Learn the differences between cardio and strength
-                    training and how both can be included in a balanced
-                    workout routine.
-                </p>
-                <p>
-                    <strong>Category:</strong> Workouts
-                </p>
+                <p>Learn the differences between cardio and strength training and how both can be included in a balanced workout routine.</p>
+                <p><strong>Category:</strong> Workouts</p>
                 <a href="article5.html">Read More</a>
             </article>
             <article class="card">
                 <h3>The Importance of Setting Fitness Goals</h3>
-                <p>
-                    Setting clear goals can help you stay focused,
-                    measure your progress and remain motivated.
-                </p>
-                <p>
-                    <strong>Category:</strong> Mindset
-                </p>
+                <p>Setting clear goals can help you stay focused, measure your progress and remain motivated.</p>
+                <p><strong>Category:</strong> Mindset</p>
                 <a href="article6.html">Read More</a>
             </article>
-        </div>
         </section>
-        <!--NEWSLETTER-->
-        <section>
-            <h2>Stay Updated</h2>
-            <p>
-                Subscribe to The Honourable newsletter to receive
-                new fitness articles, tips and updates.
-            </p>
-            <form action="#" method="post">
-                <label for="email">Email Address:</label>
-                <input type="email" id="email" name="email"
-                       placeholder="Enter your email" required>
 
-                <button type="submit">Subscribe</button>
-            </form>
+        <section>
+            <div class="container">
+                <h2>Stay Updated</h2>
+                <p>
+                    Subscribe to The Honourable newsletter to receive
+                    new fitness articles, tips and updates.
+                </p>
+                <form action="#" method="post" data-validate="newsletter">
+                    <div class="form-group">
+                        <label for="email">Email Address:</label>
+                        <input type="email" id="email" name="email" placeholder="Enter your email" required>
+                    </div>
+                    <button class="btn" type="submit">Subscribe</button>
+                </form>
+            </div>
         </section>
-        <footer>
-    <!--The footer, Contains all my links-->
-    <strong>The Honourable</strong>
-    <p>
-        <ul>
-             <li><a href ="../index.html">Home</a></li>
-            <li><a href="./about.html">About Us</a></li>
-            <li><a href="./product.html">Product</a></li>
-            <li><a href="./signup.html">sign up</a></li>
-            <li><a href="./contactus.html">Contact us</a></li>
-            <li><a href="./blog.html">Blog</a></li>
-        </ul>
-        <strong>Social Media</strong>
-        <ul>
-            <li>Instagram</li>
-            <li>Twitter</li>
-            <li>TikTok</li>
-            <li>Facebook</li>
-        </ul>
-    </p>
-    <p class="copyright">&copy; 2026 The Honourable</p>
-</footer>
     </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div>
+                    <h3>The Honourable</h3>
+                    <p>Train Honourably. With Grit. Passion. And Guts.</p>
+                </div>
+                <div>
+                    <h3>Pages</h3>
+                    <ul>
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="./about.html">About</a></li>
+                    <li><a href="./product.html">Products</a></li>
+                    <li><a href="./blog.html">Blog</a></li>
+                    <li><a href="./enquiry.html">Enquiry</a></li>
+                    <li><a href="./contactus.html">Contact Us</a></li>
+                    <li><a href="./signup.html">Sign Up</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3>Social Media</h3>
+                    <ul>
+                        <li>Instagram</li>
+                        <li>Twitter</li>
+                        <li>TikTok</li>
+                        <li>Facebook</li>
+                    </ul>
+                </div>
+            </div>
+            <p class="copyright">&copy; 2026 The Honourable</p>
+        </div>
+    </footer>
+
+    <script src="../Assets/JS/main.js" defer></script>
 </body>
 </html>
