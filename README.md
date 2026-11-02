@@ -74,11 +74,11 @@ ST10523834__WEDE5020_POEWesite/
 To check for problems, press **F12** in the browser and open the **Console** tab. Any red messages show which script or file has an error.
 
 ## Live deployment
-![Live image](Assets/Images/)
-![Live deployment image](Assets/Images/)
+![Live image](Assets/Images/Live deployment.png)
+![Live deployment image](Assets/Images/Live deployment 2.png)
 
 ## Mobile responsive design
-![Responsive Design](Assets/Images/)
+![Responsive Design](Assets/Images/Mobile Part 3.png)
 
 ## References
 Virgin Active South Africa. (2026). Virgin Active South Africa: Gyms near me. Available at: https://www.virginactive.co.za (Accessed: 5 August 2026)
