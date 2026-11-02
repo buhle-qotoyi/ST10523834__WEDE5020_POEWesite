@@ -73,6 +73,13 @@ ST10523834__WEDE5020_POEWesite/
 
 To check for problems, press **F12** in the browser and open the **Console** tab. Any red messages show which script or file has an error.
 
+## Live deployment
+![Live image](Assets/Images/)
+![Live deployment image](Assets/Images/)
+
+## Mobile responsive design
+![Responsive Design](Assets/Images/)
+
 ## References
 Virgin Active South Africa. (2026). Virgin Active South Africa: Gyms near me. Available at: https://www.virginactive.co.za (Accessed: 5 August 2026)
 USN. (2026). USN South Africa online store. Available at: https://za.usn.global/?gad_source=1&gad_campaignid=15838661437&gclid=CjwKCAjwvsvTBhBaEiwAmf-3noOTvTcZoWZmrqQR5fPHuwhbEQ2agsZDmdP-hB-kqR6-67o5vSXhRhoCTr4QAvD_BwE (Accessed: 5 August 2026).
