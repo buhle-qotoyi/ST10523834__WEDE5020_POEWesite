@@ -236,7 +236,7 @@
             box.classList.add('is-open');
             box.setAttribute('aria-hidden', 'false');
             document.body.classList.add('lb-open');
-            void box.offsetWidth; // apply the new visibility first, otherwise focus() is ignored
+            void box.offsetWidth; // apply the new visibility first, otherwise focus is ignored
             closeBtn.focus();
         }
 
