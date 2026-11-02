@@ -1,0 +1,13 @@
+{
+	"folders": [
+		{
+			"path": ".."
+		},
+		{
+			"path": "../../Web_Demo"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "HonourableFit_Web"
+	}
+}
