@@ -4,94 +4,119 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>The Honourable | About Us</title>
-<link rel="stylesheet" href="../Assets/CSS/1styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&family=Poppins:wght@600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../Assets/CSS/1styles.css">
 </head>
 <body>
-     <!--Header Section-->
-   
-          <!--Header Section-->
+    <!-- Header and navigation -->
     <header>
-     <!-- NAVIGATION -->
         <nav>
-             <nav>
-              <a href="../index.html" class="logo">
+            <a href="../index.html" class="logo">
                 <img src="../Assets/Images/HounarableFit_logo_1.png" alt="The Honourable Fit logo">
                 <span>The <em>Honourable</em></span>
             </a>
-             <a href="../index.html">Home</a> |
-            <a href="./product.html">Products</a> |
-            <a href="./blog.html">Blog</a> |
-            <a href="./enquiry.html">Enquiry</a> |
-            <a href="./contactus.html">Contact Us</a> |
-            <a href="./signup.html">Sign Up</a>
-            <script src="../Assets/JS/main.js" defer></script>
+            <ul>
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="./about.html" class="active" aria-current="page">About</a></li>
+                <li><a href="./product.html">Products</a></li>
+                <li><a href="./blog.html">Blog</a></li>
+                <li><a href="./enquiry.html">Enquiry</a></li>
+                <li><a href="./contactus.html">Contact Us</a></li>
+                <li><a href="./signup.html">Sign Up</a></li>
+            </ul>
         </nav>
     </header>
-       
-    
-    <section>
-        <!--The Main introduction -->
-         <div class="about-content">
-                <img src="../Assets/Images/HounarableFit_background_5.png" alt="Members training at The Honourable gym">
-                <div>
 
-    <h1><strong>About The Honourable</strong></h1>
-    <p>
-     The Honourable is more than just a gym.
-      We are a fitness community built around discipline, consistency and personal growth. 
-      Our goal is to provide a welcoming environment where everyone can work towards becoming stronger and healthier.
-    </p>
-    <p>
-        We want to provide quality fitness facilities, professional services and a supportive environment that motivates people to achieve their fitness goals.
-        We want to build a strong and inclusive fitness community where every member feels motivated, supported and proud of their progress.
-    </p>
-     </div>
+    <main>
+        <section>
+            <div class="container">
+                <div class="about-content">
+                    <img src="../Assets/Images/HounarableFit_background_5.png" alt="Members training at The Honourable gym">
+                    <div>
+                        <h1>About The Honourable</h1>
+                        <p>
+                            The Honourable is more than just a gym.
+                            We are a fitness community built around discipline, consistency and personal growth.
+                            Our goal is to provide a welcoming environment where everyone can work towards becoming stronger and healthier.
+                        </p>
+                        <p>
+                            We want to provide quality fitness facilities, professional services and a supportive environment that motivates people to achieve their fitness goals.
+                            We want to build a strong and inclusive fitness community where every member feels motivated, supported and proud of their progress.
+                        </p>
+                    </div>
+                </div>
+                <p class="tagline"><strong>Discipline. &nbsp; Dedication. &nbsp; Communication. &nbsp; Growth</strong></p>
             </div>
+        </section>
 
-    <p style="text-align: center;">
-       <strong> Discipline.&nbsp;&nbsp;&nbsp; Dedication.&nbsp;&nbsp;&nbsp; Communication.&nbsp;&nbsp;&nbsp; Growth</strong>
-       </p>
-    </section>
-    <br>
-    <section>
-        <!--Why the Honourable section-->
-        <h2><strong>Why The Honourable?</strong></h2>
-        <p>
-            <ul>
-                <li>Modern functional equipment</li>
-                <li>A Strong community</li>
-                <li>Friendly community</li>
-                <li>Personal Training</li>
-                <li>Clean and comfortable facilities</li>
-                <li>Flexible Memberships</li>
-            </ul>
-        </p>
-    </section>
-    <section>
-        <!--Our location on map-->
-    </section>
+        <section>
+            <div class="container">
+                <h2>Why The Honourable?</h2>
+                <ul class="check-list">
+                    <li>Modern functional equipment</li>
+                    <li>A Strong community</li>
+                    <li>Friendly community</li>
+                    <li>Personal Training</li>
+                    <li>Clean and comfortable facilities</li>
+                    <li>Flexible Memberships</li>
+                </ul>
+            </div>
+        </section>
+
+        <section>
+            <div class="container">
+                <h2>Gallery</h2>
+                <p>Select a photo to view it larger. Use the arrow keys or swipe to move between photos.</p>
+                <ul class="gallery">
+                    <li><a href="../Assets/Images/HounarableFit_background_1.png" data-lightbox data-caption="Weight plates under purple light">
+                        <img src="../Assets/Images/HounarableFit_background_1.png" alt="Weight plates under purple light" loading="lazy"></a></li>
+                    <li><a href="../Assets/Images/HounarableFit_background_2.png" data-lightbox data-caption="Training with focus and discipline">
+                        <img src="../Assets/Images/HounarableFit_background_2.png" alt="Training with focus and discipline" loading="lazy"></a></li>
+                    <li><a href="../Assets/Images/HounarableFit_background_4.png" data-lightbox data-caption="Kettlebell, medicine ball and battle ropes">
+                        <img src="../Assets/Images/HounarableFit_background_4.png" alt="Kettlebell, medicine ball and battle ropes" loading="lazy"></a></li>
+                    <li><a href="../Assets/Images/HounarableFit_background_5.png" data-lightbox data-caption="Members training at The Honourable">
+                        <img src="../Assets/Images/HounarableFit_background_5.png" alt="Members training at The Honourable" loading="lazy"></a></li>
+                </ul>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div>
+                    <h3>The Honourable</h3>
+                    <p>Train Honourably. With Grit. Passion. And Guts.</p>
+                </div>
+                <div>
+                    <h3>Pages</h3>
+                    <ul>
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="./about.html">About</a></li>
+                    <li><a href="./product.html">Products</a></li>
+                    <li><a href="./blog.html">Blog</a></li>
+                    <li><a href="./enquiry.html">Enquiry</a></li>
+                    <li><a href="./contactus.html">Contact Us</a></li>
+                    <li><a href="./signup.html">Sign Up</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3>Social Media</h3>
+                    <ul>
+                        <li>Instagram</li>
+                        <li>Twitter</li>
+                        <li>TikTok</li>
+                        <li>Facebook</li>
+                    </ul>
+                </div>
+            </div>
+            <p class="copyright">&copy; 2026 The Honourable</p>
+        </div>
+    </footer>
+
+    <script src="../Assets/JS/main.js" defer></script>
 </body>
-<br><hr>
-<footer>
-    <!--The footer, Contains all my links-->
-    <strong>The Honourable</strong>
-    <p>
-        <ul>
-            <li><a href ="../index.html">Home</a></li>
-            <li><a href="./about.html">About Us</a></li>
-            <li><a href="./product.html">Product</a></li>
-            <li><a href="./signup.html">sign up</a></li>
-            <li><a href="./contactus.html">Contact us</a></li>
-            <li><a href="./blog.html">Blog</a></li>
-        </ul>
-        <strong>Social Media</strong>
-        <ul>
-            <li>Instagram</li>
-            <li>Twitter</li>
-            <li>TikTok</li>
-            <li>Facebook</li>
-        </ul>
-    </p>
-    <p class="copyright">&copy; 2026 The Honourable</p>
-</footer>
 </html>
